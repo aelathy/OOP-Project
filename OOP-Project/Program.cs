@@ -105,14 +105,6 @@ void addMember()
     int ratingInput = Convert.ToInt32(Console.ReadLine());
     if (ratingInput > 100)
         ratingInput = 100;
-    // if (!checkName(nameInput))
-    // {
-    //     Console.WriteLine(nameInput + " added to list.");
-    // }
-    // else
-    // {
-    //     Console.WriteLine($"{nameInput} is already in the team.");
-    // }
     if (!members.Exists(m => (m.Name == nameInput)))
     {
         members.Add(new Member(nameInput, members.Last().PlayerNumber + 1, ratingInput));
@@ -123,18 +115,6 @@ void addMember()
         Console.WriteLine($"{nameInput} is already in the team.");
     }
 }
-
-// bool checkName(string name)
-// {
-//     foreach (Member member in members)
-//     {
-//         if (name == member.Name)
-//         {
-//             return true;
-//         }
-//     }
-//     return false;
-// }
 
 void removeMember()
 {
