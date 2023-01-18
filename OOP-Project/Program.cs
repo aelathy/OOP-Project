@@ -1,4 +1,4 @@
-﻿// OOP Game/Project
+﻿// Soccer Team Project - Array Editing
 #nullable disable
 Console.Clear();
 
@@ -100,7 +100,6 @@ void showMemberStats()
 
 void addMember()
 {
-<<<<<<< HEAD
     Console.WriteLine("\nAdd a new team member.");
     Console.Write("\nName: ");
     string nameInput = Console.ReadLine();
@@ -109,8 +108,6 @@ void addMember()
     if (ratingInput > 100)
         ratingInput = 100;
     if (!members.Exists(m => (m.Name == nameInput)))
-=======
->>>>>>> efda52cdb0cd62f4374c6dfc9aab1186fb49c146
     {
         Console.WriteLine("\nAdd a new team member.");
         Console.Write("\nName: ");
